@@ -1,4 +1,5 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import tensorflow.contrib as tf_contrib
 from utils import pytorch_kaiming_weight_factor
 
