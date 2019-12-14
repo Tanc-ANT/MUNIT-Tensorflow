@@ -367,16 +367,16 @@ assert len(netGA.trainable_weights) == (len(encoder_content_A.trainable_weights)
 """
 
 try:
-    encoder_style_A.load_weights("models/encoder_style_A.h5")
-    encoder_style_B.load_weights("models/encoder_style_B.h5")
-    encoder_content_A.load_weights("models/encoder_content_A.h5")
-    encoder_content_B.load_weights("models/encoder_content_B.h5")
-    decoder_A.load_weights("models/decoder_A.h5")
-    decoder_B.load_weights("models/decoder_B.h5")
+    encoder_style_A.load_weights("edges2shoes/models/encoder_style_A.h5")
+    encoder_style_B.load_weights("edges2shoes/models/encoder_style_B.h5")
+    encoder_content_A.load_weights("edges2shoes/models/encoder_content_A.h5")
+    encoder_content_B.load_weights("edges2shoes/models/encoder_content_B.h5")
+    decoder_A.load_weights("edges2shoes/models/decoder_A.h5")
+    decoder_B.load_weights("edges2shoes/models/decoder_B.h5")
     #netGA.load_weights("models/netGA.h5") 
     #netGB.load_weights("models/netGB.h5") 
-    netDA.load_weights("models/netDA.h5") 
-    netDB.load_weights("models/netDB.h5") 
+    netDA.load_weights("edges2shoes/models/netDA.h5") 
+    netDB.load_weights("edges2shoes/models/netDB.h5") 
     print ("Model weights files are successfully loaded")
 except:
     print ("Error occurs during weights files loading.")
@@ -766,14 +766,14 @@ while gen_iterations < TOTAL_ITERS:
         errGA_adv_sum = errGB_adv_sum = 0
         
         # Save models
-        encoder_style_A.save_weights("models/encoder_style_A.h5")
-        encoder_content_A.save_weights("models/encoder_content_A.h5")
-        encoder_style_B.save_weights("models/encoder_style_B.h5")
-        encoder_content_B.save_weights("models/encoder_content_B.h5")
-        decoder_A.save_weights("models/decoder_A.h5")
-        decoder_B.save_weights("models/decoder_B.h5")
+        encoder_style_A.save_weights("edges2shoes/models/encoder_style_A.h5")
+        encoder_content_A.save_weights("edges2shoes/models/encoder_content_A.h5")
+        encoder_style_B.save_weights("edges2shoes/models/encoder_style_B.h5")
+        encoder_content_B.save_weights("edges2shoes/models/encoder_content_B.h5")
+        decoder_A.save_weights("edges2shoes/models/decoder_A.h5")
+        decoder_B.save_weights("edges2shoes/models/decoder_B.h5")
         #netGA.save_weights("models/netGA.h5")
         #netGB.save_weights("models/netGB.h5")
-        netDA.save_weights("models/netDA.h5")
-        netDB.save_weights("models/netDB.h5")
+        netDA.save_weights("edges2shoes/models/netDA.h5")
+        netDB.save_weights("edges2shoes/models/netDB.h5")
 
