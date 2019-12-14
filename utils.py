@@ -4,7 +4,7 @@ from tensorflow.contrib import slim
 from scipy import misc
 import os, random
 import numpy as np
-from imageio
+import imageio
 
 # https://people.eecs.berkeley.edu/~taesung_park/CycleGAN/datasets/
 # https://people.eecs.berkeley.edu/~tinghuiz/projects/pix2pix/datasets/
