@@ -88,7 +88,7 @@ conv_init = 'he_normal' # initializer of generators' conv layers
 lrD = 1e-4 # Discriminator learning rate
 lrG = 1e-4 # Generator learning rate
 opt_decay = 0 # Learning rate decay over each update.
-TOTAL_ITERS = 100000 # Max training iterations
+TOTAL_ITERS = 300000 # Max training iterations
 
 # Loss weights for generators
 w_D = 1 # Adversarial loss
@@ -702,7 +702,7 @@ errGA_x_recon_sum = errGA_s_recon_sum = errGA_c_recon_sum = 0
 errGB_x_recon_sum = errGB_s_recon_sum = errGB_c_recon_sum = 0
 errGA_adv_sum = errGB_adv_sum = 0
 
-display_iters = 10
+display_iters = 300
 
 while gen_iterations < TOTAL_ITERS: 
     imgs_A, _ = next(gA) 
